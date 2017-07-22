@@ -24,7 +24,6 @@ func main() {
 	var tree *Tree = new(Tree)
 	tree.Row = start_row
 	tree.Col = start_col
-	tree.Board[start_row][start_col] = 1
 	start_time := time.Now()
 	CreateEntireTree(tree, 0)
 	high := findHigh(tree) - 1
